@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@100;300;400;500;800&family=Raleway:wght@200;400;600&display=swap');
+/* tipografía para usar: 
+font-family: 'Cinzel', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* presentación */
+.hero-img{
+    padding: 5em 0em 3em 0em;
+}
+.grande{
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.grande-1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding-top: 1em;
+}
+.btn-mio{
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+}
+/* logo y menú */
+.logo img{
+    width: 20%;
+}
+#header{
+    background-color: black;
+    font-family: 'Cinzel', serif;
+}
+.nav-link{
+    color: white;
+}
