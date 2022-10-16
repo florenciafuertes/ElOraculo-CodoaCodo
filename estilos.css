@@ -9,6 +9,28 @@ font-family: 'Raleway', sans-serif;
 	padding: 0;
 	box-sizing: border-box;
 }
+body a{
+    text-decoration: none;
+    color: black;
+}
+body a:hover{
+    text-decoration: none;
+    color: black;
+}
+/* logo y menú */
+.logo img{
+    width: 20%;
+}
+#header{
+    background-color: black;
+    font-family: 'Cinzel', serif;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(200, 200, 200);
+}
 /* presentación */
 .hero-img{
     padding: 5em 0em 3em 0em;
@@ -22,18 +44,69 @@ font-family: 'Raleway', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
 }
 .btn-mio{
-    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+    min-width: 130px;
+ 	height: 40px;
+ 	padding: 5px 50px;
+ 	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: 1px solid #37373d;
+	color: #252440;
+	background: transparent;
+	text-align: center;	
+	font-size: 1.3rem;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: rgb(94, 93, 93) 0.1em 0.1em 0.1em
 }
-/* logo y menú */
-.logo img{
-    width: 20%;
+.btn-mio:hover:after {
+	top: 0;
+	left: 0;
 }
-#header{
-    background-color: black;
+.btn-mio:after {
+	content: "";
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	top: 5px;
+	left: 5px;
+	transition: 0.2s;
+	background-color: #d1d1d1;
+}
+/* Cajas con tipos de sesiones */ 
+.caja{
+    font-family: 'Raleway', sans-serif;
+    color: #252440;
+    padding: 0em 2em 0em 2em;
+}
+.icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: #d1d1d1;
+    box-shadow: 0 10px 29px 0 rgba(205, 206, 207, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+.icon-box:hover {
+    transform: translateY(-5px);
+}
+.title{
     font-family: 'Cinzel', serif;
 }
-.nav-link{
-    color: white;
+/* footer */
+#footer img{
+    width: 5em;
 }
