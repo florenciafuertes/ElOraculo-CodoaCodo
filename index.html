@@ -8,113 +8,74 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- Mi CSS -->
     <link rel="stylesheet" href="estilos.css">
-    <title>TPO Desarrollo Web</title>
+    <title>INICIO</title>
+    <meta name="astrología" content="conectá y obtené respuestas de las cartas">
 </head>
 <body>
-    <!--Encabezado--> 
-    <header>
-        <div id="header" class="fixed-top d-flex align-items-center">
-            <div class="container d-flex align-items-center">
-                <div class="logo me-auto">
-                    <img src="assets/logo.png" alt="logo" class="img-fluid">
+    <div class="contenedor">
+        <!--Encabezado --> 
+        <header class="header"> 
+                <img src="assets/logo.png" alt="logo" class="header__img">
+                <div class="header__nav">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                        <li><a href="sesiones.html">SESIONES</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
                 </div>
-                <nav class="navbar navbar-expand-xl">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarWithDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sesiones.html">SESIONES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="libros.html">LIBROS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">CONTACTO</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+        </header>
+        <!-- Sector Principal -->
+        <section class="main">
+            <div class="main__title">¿Qué vas a preguntar hoy?</div>
+            <div class="main__sub">
+                <p>Pensá una pregunta...</p>
+                <p>Consultá a nuestro oráculo</p>
+                <p>y obtené un consejo del tarot</p>
             </div>
-        </div>
-    </header>
-    <!-- Fin del Encabezado -->
-    <!-- Presentación -->
-    <section>
-        <div class="container">
-    		<div class="row">
-	        	<div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-	          		<div>
-	            		<div class="grande">¿Qué vas a preguntar hoy?</div>
-	            		<div class="grande-1">
-                            <p>Pensá una pregunta...</p>
-                            <p>Consultá a nuestro oráculo</p>
-                            <p>y obtené un consejo del tarot</p>
-                        </div>
-	            		<a href="sesiones.html" class="btn-mio">Consultar al Oráculo</a>
-	          		</div>
-	        	</div>
-        		<div class="col-lg-6 order-1 order-lg-2 hero-img">
-          			<img src="assets/bola-de-cristal.jpeg" class="img-fluid" alt="bola de cristal">
-        		</div>
-      		</div>
-    	</div>
-    </section>
-    <!-- Fin de la presentación -->
-    <!-- Cajas con tipos de sesiones -->
-    <section>
-        <div class="row caja">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <article class="icon-box">
-                    <h4 class="title"><a href="">Astrología</a></h4>
-                    <p class="description">Conocé todo sobre los aspectos astrológicos!</p>
-                </article>
+            <a href="sesiones.html" class="main__btn">Consultar al Oráculo</a>
+        </section>
+        <img src="assets/bola-de-cristal.jpeg" class="main__img" alt="bola de cristal">
+        <!-- Cajas con tipos de sesiones -->
+        <div class="title">¿Qué tipo de consulta te interesa?</div>
+        <section class="sesiones">
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Astrología</a></h4>
+                <p class="description">Conocé todo sobre los aspectos astrológicos!</p>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <article class="icon-box">
-                    <h4 class="title"><a href="">Mediumnidad</a></h4>
-                    <p class="description">Contactá con entidades de otros planos!</p>
-                </article>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Mediumnidad</a></h4>
+                <p class="description">Contactá con entidades de otros planos!</p>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <article class="icon-box">
-                    <h4 class="title"><a href="">Péndulo</a></h4>
-                    <p class="description">Obtené respuestas concretas a tus preguntas!</p>
-                </article>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Péndulo</a></h4>
+                <p class="description">Obtené respuestas concretas a tus preguntas</p>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <article class="icon-box icon-box-blue" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">
-                    <h4 class="title"><a href="">Oráculo</a></h4>
-                    <p class="description">Hacé ya mismo una pregunta gratis en linea!</p>
-                </article>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Oráculo</a></h4>
+                <p class="description">Hacé ya mismo una pregunta gratis en linea!</p>
             </div>
-        </div>
-    </section>
-    <!-- Fin de cajas con tipos de sesiones -->
-    <!-- Footer -->
-    <div class="container" id="footer">
-  		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-			<p class="col-md-4 mb-0  text-muted">© 2022 Copyright: Codo a Codo | Python</p>
-			<img src="assets/logo.png" class="col-md-5 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-mb-auto">
-			<ul class="nav col-md-5 justify-content-end">
-				<li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">INICIO</a></li>
-				<li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">NOSOTROS</a></li>
-				<li class="nav-item"><a href="sesiones.html" class="nav-link px-2 text-muted">SESIONES</a></li>
-				<li class="nav-item"><a href="libros.html" class="nav-link px-2 text-muted">LIBROS</a></li>
-				<li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">CONTACTO</a></li>
-			</ul>  			
-  		</footer>	
-  	</div>
-    <!-- Fin del Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </section>
+        <!-- Fin de cajas con tipos de sesiones -->
+        <!-- Footer -->
+        <div class="footer">
+			<div class="footer__nav">
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="nosotros.html">QUIENES SOMOS</a></li>
+					<li><a href="relatos.html">SESIONES</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</div>
+			<div class="footer__redes">
+				<div class="footer__title">Seguinos en nuestras redes</div>
+				<img src="assets/redes.png" alt="redes sociales" class="footer__img">
+				<a href="https://www.instagram.com/" target="_blank" class="footer__ig">Instagram</a>
+				<a href="https://www.youtube.com/" target="_blank" class="footer__yt">YouTube</a>
+				<a href="https://www.facebook.com/" target="_blank" class="footer__fb">Facebook</a>
+			</div>
+		</div>
+        <!-- Fin del Footer -->
+    </div>
 </body>
 </html>
