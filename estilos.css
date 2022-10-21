@@ -40,7 +40,7 @@ body a:hover{
 	font-family: 'Montserrat', sans-serif;
     color: white;
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 640px){
 	.contenedor{
 		grid-template-columns: auto;
 		grid-template-rows: auto;
@@ -61,17 +61,13 @@ body a:hover{
 	align-items: center; 
 	width: 100%;
 	font-family: 'Cinzel', serif;
+	font-size: 20px;
 	background-color: black;
 }
 .header__nav ul{
 	display: flex;
 	align-content: center;
 	list-style: none;
-}
-@media all and (max-width: 768px){
-	.header__nav ul{
-		flex-wrap: wrap;
-	}
 }
 .header__nav ul li{
 	margin: 1rem;
@@ -99,22 +95,11 @@ body a:hover{
     text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
 	width: 75%;
 }
-@media all and (max-width: 768px){
-	.main__title{
-		font-size: 1.2rem;
-		margin-top: 1rem;
-	}
-}
 .main__sub{
 	font-family: 'Raleway', sans-serif;
     font-size: 25px;
     padding-bottom: 1.5em;
     padding-top: 1.5em;
-}
-@media all and (max-width: 768px){
-	.main p{
-		width: 60%;
-	}
 }
 .main__img{
 	grid-area: imagen;
@@ -130,7 +115,7 @@ body a:hover{
 	outline: none;
 	border: 1px solid white;
 	color: #252440;
-	background: black;
+	background: transparent;
     color: white;
 	text-align: center;	
 	font-size: 1.3rem;
@@ -149,8 +134,8 @@ body a:hover{
 	z-index: -1;
 	position: absolute;
 	height: 100%;
-	top: 5px;
-	left: 5px;
+	top: 8px;
+	left: 8px;
 	transition: 0.2s;
 	background-color: #5E5629;
 }
@@ -164,11 +149,6 @@ body a:hover{
 	text-align: left;
 	margin-top: 1rem;
 }
-@media all and (max-width: 768px){
-	.sesiones{
-		grid-template-columns: auto;
-	}
-}
 .title{
     grid-area: titulo;
 	font-family: 'Cinzel', serif;
@@ -177,11 +157,6 @@ body a:hover{
 	color: white;
     text-shadow: rgb(255, 255, 254) 0.1em 0.1em 0.2em;
 	margin-top: 1rem;
-}
-@media all and (max-width: 768px){
-	.title{
-		font-size: 1.6rem;
-	}
 }
 .title2{
     font-family: 'Cinzel', serif;
@@ -201,6 +176,10 @@ body a:hover{
 .sesiones__info:hover {
     transform: translateY(-5px);
 }
+.sesiones__info img{
+	width: 20%;
+	padding: 0.7em 0em;
+}
 /* PIE DE PÁGINA */
 .footer{
 	grid-area: footer;
@@ -212,11 +191,6 @@ body a:hover{
 	width: 100%;
     color: white;
     font-family: 'Raleway', sans-serif;
-}
-@media all and (max-width: 400px){
-	.footer{
-		font-size: 12px;
-	}
 }
 .footer__redes{
 	display: grid;
@@ -258,4 +232,80 @@ body a:hover{
 }
 .footer__fb{
 	grid-area: facebook;
+}
+/* responsive para tablet desde 641px hasta 1280px*/ 
+@media all and (min-width: 641px) and (max-width: 1280px){
+	.header{
+		font-size: 15px;
+	}
+	.main__title{
+		text-align: center;
+		font-size: 30px;
+	}
+	.main__sub{
+		text-align: center;
+		justify-content: center;
+		font-size: 15px;
+		padding-left: 7em;
+	}
+	.main__img{
+		padding-top: 3em;
+	}
+	.main__btn{
+		padding: 10px 25px;
+		font-size: 15px;
+		margin-left: 5em;
+	}
+	.title{
+		font-size: 20px;
+		padding-left: 0.5em;
+	}
+	.title2{
+		font-size: 20px;
+	}
+	.sesiones{
+		grid-column-gap: 10px;
+		padding: 0.5em 10px;
+	}
+}
+/* responsive para celular de 1280px hasta 640px*/
+@media all and (max-width: 640px){
+	.header__nav ul{
+		flex-wrap: wrap;
+		font-size: 13px;
+	}
+	.main{
+		padding-left: 3em;
+	}
+	.main__title{
+		font-size: 1.2rem;
+		margin-top: 1rem;
+		text-align: center;
+	}
+	.main__sub{
+		font-size: 14px;
+		text-align: center;
+		padding-left: 1em;
+	}
+	.main__btn{
+		padding: 10px 25px;
+		font-size: 15px;
+	}
+	.title{
+		font-size: 1.6rem;
+	}
+	.sesiones{
+		grid-template-columns: auto;
+		grid-row-gap: 0.5em;
+		padding: 0.2em 0.5em;
+	}
+	.sesiones__info{
+		padding: 0px 10px ;
+	}
+	.title2{
+		font-size: 1.5em;
+	}
+	.footer{
+		font-size: 12px;
+	}
 }
