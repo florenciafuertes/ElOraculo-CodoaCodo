@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>RESERVAS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!--Encabezado --> 
+        <header class="header"> 
+                <h1 class="main__title">El Oráculo</h1><img src="assets/logo.png" class="header__img alt="logo">
+                <div class="header__nav">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                        <li><a href="sesiones.html">SESIONES</a></li>
+                        <li><a href="reservas.html">RESERVAS</a></li>
+                    </ul>
+                </div>
+        </header>
+                <!-- Sector Principal --> 
+                <main>
+                    <br>
+                    <br>
+                <p class="main__title">Resevá ya tu Sesión!</p>
+                <!-- Cajas con tipos de sesiones -->
+                    <div class="sesiones1">  
+                            <aside>
+                            <img id="img_ppal" src="assets/vela.jpeg" alt="vela">
+                            </aside>
+                            <section class="article">
+                                <form action="https://getform.io/f/c01ceb54-579d-45e6-9059-0767afe011e5" method="post" target="_parent">
+                                <h4 class="main__sub">Reservá tu Sesión</a></h4> 
+                                <table class="table">
+                                    <tr>
+                                        <td><label for="nombre">Nombre</label>
+                                        <input size="30" type="text" id="text" name="nombre" required="text"></td>
+                                        <td><label for="apellido">Apellido</label>
+                                        <input size="30" type="text" id="apellido" name="apellido" required="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="mail">Mail</label>
+                                        <input size="30" type="text" id="mail" name="mail" required="@"></td>
+                                        <td><label for="celular">Celular</label>
+                                        <input size="30" type="number" id="celular" name="celular" required="number"></td>
+                                    </tr>
+                                </table>
+                                    <p class="main__sub">¿Con quien vas a reservar?</p>
+                                <table class="table">
+                                    <tr>
+                                        <td><input type="checkbox" name="astrología astromostra" value="1">Astrología-Astromostra</td>
+                                        <td><input type="checkbox" name="astrología lu" value="2">Astrología-Lu Gaitan</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="mediumnidad eva" value="3">Mediumnidad-Eva spina</td>
+                                        <td><input type="checkbox" name="péndulo estefanía" value="4">Péndulo-Estefanía Montaro</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="tarot alejandro" value="5">Tarot-Alejandro Jodorowsky</td>
+                                        <td><input type="checkbox" name="tarot dalia" value="6">Tarot-Dalia F. Walker</td>
+                                    </tr>    
+                                    <tr>   
+                                        <td><input type="checkbox" name="tarot luciana" value="7">Tarot-Luciana Potenza</td>
+                                        <td><input type="checkbox" name="tarot marianne" value="8">Tarot-Marianne Costa</td>
+                                    </tr>
+                                </table>
+                                    <input type="submit" class="form_btn"  value="Reservar">
+                                </form>                     
+                            </section>
+                    </div>        
+                </main>    
+        <!-- Fin de cajas con tipos de sesiones -->
+        <!-- Footer -->
+            <div class="footer">
+			    <div class="footer__nav">
+				    <ul>
+					    <li><a href="index.html">INICIO</a></li>
+					    <li><a href="nosotros.html">QUIENES SOMOS</a></li>
+					    <li><a href="relatos.html">SESIONES</a></li>
+					    <li><a href="reservas.html">RESERVAS</a></li>
+				    </ul>
+			    </div>
+			    <div class="footer__redes">
+				    <div class="footer__title">Seguinos en nuestras redes</div>
+				    <img src="assets/redes.png" alt="redes sociales" class="footer__img">
+				    <a href="https://www.instagram.com/" target="_blank" class="footer__ig">Instagram</a>
+				    <a href="https://www.youtube.com/" target="_blank" class="footer__yt">YouTube</a>
+				    <a href="https://www.facebook.com/" target="_blank" class="footer__fb">Facebook</a>
+			    </div>
+	        </div>
+        <!-- Fin del Footer -->
+</body>
+</html>
