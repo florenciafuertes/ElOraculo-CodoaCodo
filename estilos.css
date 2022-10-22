@@ -78,7 +78,7 @@ body a:hover{
 	color: white;
 }
 .header__img{
-	width: 4em;
+	width: 8em;
 }
 /* presentación */
 .main{
@@ -234,7 +234,7 @@ body a:hover{
 .footer__fb{
 	grid-area: facebook;
 }
-/* responsive para tablet desde 641px hasta 1280px*/ 
+/* index responsive para tablet desde 641px hasta 1280px*/ 
 @media all and (min-width: 641px) and (max-width: 1280px){
 	.header{
 		font-size: 15px;
@@ -269,11 +269,14 @@ body a:hover{
 		padding: 0.5em 10px;
 	}
 }
-/* responsive para celular de 1280px hasta 640px*/
+/* index responsive para celular de 1280px hasta 640px*/
 @media all and (max-width: 640px){
 	.header__nav ul{
 		flex-wrap: wrap;
 		font-size: 13px;
+	}
+	.header__img{
+		width: 4em;
 	}
 	.main{
 		padding-left: 3em;
@@ -335,6 +338,7 @@ body a:hover{
 }
 /* videos */
 .videos{
+	grid-area: video;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
@@ -342,5 +346,50 @@ body a:hover{
 }
 .videos iframe{
 	border-radius: 16px;
-	background: linear-gradient(0deg, rgba(94, 86, 41, 0.5), rgba(94, 86, 41, 0.5)), url(.jpg), #D9D9D9;
+}
+/* SESIONES */
+/* Contenedor para maquetado GRID*/
+.content{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"header header header header"
+	"texto texto texto texto"
+	"fotos fotos fotos fotos"
+	"footer footer footer footer";
+	align-content: center;
+	justify-content: center;
+	width: 1400px;
+	font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.front, .back, .carta {
+	height: 350px;
+	padding: 0.5em;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transition: all 0.5s linear;
+}
+.back {
+	transition: all 0.5s linear;
+	transform: rotateY(180deg);
+}
+.carta {
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.carta:hover .front {
+	transform: rotateY(180deg);
+}
+.carta:hover .back {
+	transform: rotateY(360deg);
 }
