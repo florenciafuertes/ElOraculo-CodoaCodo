@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS -->
     <link rel="stylesheet" href="estilos.css">
-    <title>SESIONES</title>
+    <title>INICIO</title>
     <meta name="astrología" content="conectá y obtené respuestas de las cartas">
 </head>
 <body>
-    <div class="content">
+    <div class="contenedor">
         <!--Encabezado --> 
         <header class="header"> 
-                <img src="assets/logo.jpg" alt="logo" class="header__img">
+            <h1 class="main__title">El Oráculo</h1><img src="assets/logo.png" alt="logo" class="header__img">
                 <div class="header__nav">
                     <ul>
                         <li><a href="index.html">INICIO</a></li>
@@ -23,26 +23,38 @@
                     </ul>
                 </div>
         </header>
-        <!-- Tipos de Sesiones -->
+        <!-- Sector Principal -->
         <section class="main">
-            <div class="main__title">Con quien vas a tener tu sesion?</div>
+            <div class="main__title">¿Qué vas a preguntar hoy?</div>
+            <div class="main__sub">
+                <p>Pensá una pregunta...</p>
+                <p>Consultá a nuestro oráculo</p>
+                <p>y obtené un consejo del tarot</p>
+            </div>
+            <a href="sesiones.html" class="main__btn">Consultar al Oráculo</a>
         </section>
-        <div class="carta">
-            <img src="assets/lu-gaitan.jpg" alt="Lu Gaitan" class="front">
-            <img src="assets/lu-gaitan-2.jpg" alt="descripción" class="back">
-        </div>
-        <div class="carta">
-            <img src="assets/dalia-f-walker.jpg" alt="Dalia Walker" class="front">
-            <img src="assets/dalia-f-walker-2.jpg" alt="descripción" class="back">
-        </div>
-        <div class="carta">
-            <img src="assets/astromostra.jpg" alt="AstroMostra" class="front">
-            <img src="assets/astromostra2.jpg" alt="descripción" class="back">
-        </div>
-        <div class="carta">
-            <img src="assets/EVA-SPINA.jpg" alt="Eva Spina" class="front">
-            <img src="assets/EVA-SPINA-2.jpg" alt="descripción" class="back">
-        </div>
+        <img src="assets/boladecristal.jpeg" class="main__img" alt="bola de cristal">
+        <!-- Cajas con tipos de sesiones -->
+        <div class="title">¿Qué tipo de consulta te interesa?</div>
+        <section class="sesiones">
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Astrología</a></h4>
+                <p class="description">Conocé todo sobre los aspectos astrológicos!</p>
+            </div>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Mediumnidad</a></h4>
+                <p class="description">Contactá con entidades de otros planos!</p>
+            </div>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Péndulo</a></h4>
+                <p class="description">Obtené respuestas concretas a tus preguntas</p>
+            </div>
+            <div class="sesiones__info">
+                <h4 class="title2"><a href="sesiones.html">Oráculo</a></h4>
+                <p class="description">Hacé ya mismo una pregunta gratis en linea!</p>
+            </div>
+        </section>
+        <!-- Fin de cajas con tipos de sesiones -->
         <!-- Footer -->
         <div class="footer">
 			<div class="footer__nav">
