@@ -269,7 +269,7 @@ body a:hover{
 		padding: 0.5em 10px;
 	}
 }
-/* index responsive para celular de 1280px hasta 640px*/
+/* index responsive para celular hasta 640px*/
 @media all and (max-width: 640px){
 	.header__nav ul{
 		flex-wrap: wrap;
@@ -317,13 +317,14 @@ body a:hover{
 /* Contenedor para maquetado GRID*/
 .conteiner{
     display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
+	grid-template-columns: 2fr;
+	grid-template-rows: repeat(5, auto);
 	grid-template-areas:
-	"header"
-	"texto"
-	"video"
-	"footer";
+	"header header"
+	"texto texto"
+	"video video"
+	"video video"
+	"footer footer";
 	align-content: center;
 	justify-content: center;
 	width: 1400px;
@@ -331,10 +332,19 @@ body a:hover{
     color: white;
 }
 /* texto */
-.main__sub2{
+.press{
+	font-family: 'Cinzel', serif;
+	color: white;
+}
+.press__title{
+	font-size: 40px;
+	padding-top: 1em;
+}
+.press__sub{
 	line-height: 1em;
 	font-size: 20px;
 	padding-top: 1em;
+	font-family: 'Raleway', sans-serif;
 }
 /* videos */
 .videos{
@@ -343,9 +353,28 @@ body a:hover{
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-row-gap: 1em;
+	padding-top: 1em;
 }
-.videos iframe{
+iframe{
 	border-radius: 16px;
+	padding-top: 1em;
+}
+/* responsive para celular de 640px o menos */
+@media all and (max-width: 640px){
+	.videos{
+		grid-template-columns: auto;
+	}
+	.press__title{
+		font-size: 25px;
+		padding-left: .5em;
+	}
+	.press__sub{
+		font-size: 14px;
+		padding-left: 1em;
+	}
+	iframe{
+		width: 95%;
+	}
 }
 /* SESIONES */
 /* Contenedor para maquetado GRID*/
@@ -363,6 +392,22 @@ body a:hover{
 	width: 1400px;
 	font-family: 'Montserrat', sans-serif;
     color: white;
+}
+/* responsive para celular desde 640px o menos */
+@media all and (max-width: 640px){
+	.content{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"header"
+		"texto"
+		"fotos"
+		"fotos"
+		"fotos"
+		"fotos"
+		"footer";
+	}
 }
 .front, .back, .carta {
 	height: 350px;
@@ -399,8 +444,7 @@ body a:hover{
 }
 .sesiones1{
     display: inline-flex;
-    grid-gap: 25rem;
-    grid-auto-flow: column;
+    grid-gap: 5rem;
 }
 #img_ppal{
     width: 400px;
@@ -426,4 +470,14 @@ body a:hover{
     background-color: #5E5629;
 	padding: 0.5em;
 	margin-top: 1em;
+}
+/* responsive para celular desde 640px o menos */
+@media all and (max-width: 640px){
+	.sesiones1{
+		display: inline;
+	}
+	.article{
+		width: auto;
+		height: auto;
+	}
 }
