@@ -359,8 +359,8 @@ iframe{
 	border-radius: 16px;
 	padding-top: 1em;
 }
-/* responsive para celular de 640px o menos */
-@media all and (max-width: 640px){
+/* responsive para celular y tablet hasta 1024px */
+@media all and (max-width: 1024px){
 	.videos{
 		grid-template-columns: auto;
 	}
@@ -393,8 +393,8 @@ iframe{
 	font-family: 'Montserrat', sans-serif;
     color: white;
 }
-/* responsive para celular desde 640px o menos */
-@media all and (max-width: 640px){
+/* responsive para celular y tablet hasta 1024px */
+@media all and (max-width: 1024px){
 	.content{
 		display: grid;
 		grid-template-columns: auto;
@@ -471,8 +471,8 @@ iframe{
 	padding: 0.5em;
 	margin-top: 1em;
 }
-/* responsive para celular desde 640px o menos */
-@media all and (max-width: 640px){
+/* responsive para celular y tablet hasta 1024 */
+@media all and (max-width: 1024px){
 	.sesiones1{
 		display: inline;
 	}
